@@ -27,7 +27,7 @@ services:
 
   api-mysql:
     build:
-      context: ./api-mysql
+      context: api-mysql
     container_name: api-mysql-agrupado
     ports:
       - "8082:8080"
@@ -38,7 +38,7 @@ services:
 
   api-mongo:
     build:
-      context: ./api-mongo
+      context: api-mongo
     container_name: api-mongo-agrupado
     ports:
       - "8081:8080"
